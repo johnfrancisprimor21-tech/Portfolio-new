@@ -1,0 +1,196 @@
+@import "tailwindcss";
+
+/*
+ * Dark mode is driven by the existing `data-theme="dark"` attribute on
+ * <html> (managed by ThemeContext), not by a `.dark` class or the OS
+ * preference — so we tell Tailwind to use that as the `dark:` variant.
+ */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/*
+ * Design tokens. Each color points at a plain CSS variable (defined below)
+ * so the existing light/dark cascade keeps working unchanged — Tailwind
+ * just gets `bg-violet`, `text-cyan`, `border-border`, etc. for free, and
+ * they auto-switch with the theme. `surface` / `surface2` / `purple` are
+ * only ever set inside the gallery page component, so those
+ * utilities are effectively gallery-only.
+ */
+@theme {
+  --color-bg: var(--bg);
+  --color-bg2: var(--bg2);
+  --color-border: var(--border);
+  --color-text: var(--text);
+  --color-sub: var(--sub);
+  --color-muted: var(--muted);
+  --color-violet: var(--violet);
+  --color-vlight: var(--vlight);
+  --color-cyan: var(--cyan);
+  --color-surface: var(--surface);
+  --color-surface2: var(--surface2);
+  --color-purple: var(--purple);
+
+  --font-display: 'Syne', sans-serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+
+  --shadow-card: var(--shadow);
+  --shadow-soft: var(--shadow2);
+  --shadow-gallery: var(--card-shadow);
+}
+
+:root {
+  --bg: #f4f6fb;
+  --bg2: #eef1f8;
+  --border: #e2e6f0;
+  --text: #111827;
+  --sub: #6b7280;
+  --muted: #9ca3af;
+  --violet: #7c3aed;
+  --vlight: #ede9fe;
+  --cyan: #06b6d4;
+  --grad: linear-gradient(135deg, #7c3aed, #06b6d4);
+  --grad2: linear-gradient(135deg, #ede9fe, #cffafe);
+  --shadow: 0 4px 24px rgba(124, 58, 237, .10);
+  --shadow2: 0 2px 12px rgba(0, 0, 0, .07);
+}
+
+[data-theme="dark"] {
+  --bg: #0f1219;
+  --bg2: #16192b;
+  --border: rgba(124, 58, 237, .15);
+  --text: #e2e8f0;
+  --sub: #9ca3af;
+  --muted: #6b7280;
+  --violet: #a855f7;
+  --vlight: rgba(168, 85, 247, .12);
+  --cyan: #06b6d4;
+  --shadow: 0 4px 24px rgba(124, 58, 237, .15);
+  --shadow2: 0 2px 12px rgba(0, 0, 0, .2);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-text);
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-violet);
+  border-radius: 99px;
+}
+
+/* Brand gradient backgrounds + gradient (clipped) text, used throughout */
+@utility bg-grad {
+  background: var(--grad);
+}
+
+@utility bg-grad-2 {
+  background: var(--grad2);
+}
+
+@utility text-grad {
+  background: var(--grad);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes badge-pulse {
+
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: .5;
+    transform: scale(1.5);
+  }
+}
+
+@keyframes theme-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    transform: scale(.92);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes page-exit {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+/* Applied to <body> by usePageTransition while routing between pages */
+.page-enter {
+  animation: page-enter .4s ease;
+}
+
+.page-exit {
+  animation: page-exit .4s ease forwards;
+}

@@ -2,7 +2,7 @@
 
 Personal portfolio website showcasing my projects, skills, and journey as a BS Information Technology student at Cebu Eastern College, Cebu City, Philippines.
 
-🔗 **Live site:** https://portfolio-new-nine-bice.vercel.app
+🔗 **Live site:** https://jfcp.vercel.app
 
 ---
 
@@ -60,15 +60,4 @@ IntelliJ IDEA · Visual Studio · SQL · Firestore · Android (APK)
 
 ---
 
-## Running Locally
 
-```bash
-npm install
-npm run dev
-```
-
-Build for production:
-
-```bash
-npm run build
-```

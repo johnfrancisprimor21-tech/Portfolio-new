@@ -22,7 +22,6 @@ export const skillGroups = [
       { name: 'Visual Studio', level: 'Great', levelClass: 'lv-g' },
       { name: 'SQL', level: 'Good', levelClass: 'lv-d' },
       { name: 'Firestore', level: 'Good', levelClass: 'lv-d' },
-      { name: 'Windows', level: 'Expert', levelClass: 'lv-e' },
     ],
   },
 ]

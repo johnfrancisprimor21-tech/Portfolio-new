@@ -11,7 +11,7 @@
     <!-- Prevent flash of wrong theme: apply saved preference before first paint -->
     <script>
       (function () {
-        // :root defaults to light, so we only need to act when the user wants dark
+        // :root defaults to light
         if (localStorage.getItem('theme') === 'dark') {
           document.documentElement.setAttribute('data-theme', 'dark');
         }

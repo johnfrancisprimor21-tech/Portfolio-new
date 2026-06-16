@@ -1,99 +1,73 @@
-# Portfolio — React Edition
+# John Francis C. Primor — Portfolio
 
-This is the original static portfolio (`index.html` + `attendtrack-gallery.html` +
-`style.css` + `script.js`) rebuilt as a **React + Vite** single-page app. The visual
-design is intentionally untouched for now — same fonts, same colors, same layout,
-same CSS — so this PR is purely "same site, React architecture." Tailwind comes next.
+Personal portfolio website showcasing my projects, skills, and journey as a BS Information Technology student at Cebu Eastern College, Cebu City, Philippines.
 
-## Tech stack
+🔗 **Live site:** https://portfolio-new-nine-bice.vercel.app
 
-- **Vite** — build tool / dev server
-- **React 19**
-- **React Router v6** — client-side routing between the portfolio and the
-  AttendTrack gallery (no more separate `.html` files)
+---
 
-## Getting started
+## About Me
+
+I'm a BSIT student passionate about building systems, writing code, and turning ideas into working software. I enjoy learning by doing — most of what I know comes from hands-on projects and self-directed exploration beyond the classroom.
+
+- 📍 Cebu City, Philippines
+- 🎓 BS Information Technology — Cebu Eastern College
+- 💼 Available for opportunities
+- 📘 Facebook: [John Francis Primor II](https://www.facebook.com/jfcp21)
+
+---
+
+## What's Inside the Portfolio
+
+| Section | Description |
+|---|---|
+| **Hero** | Introduction with stats — 2 years coding, 4+ projects, 3+ languages |
+| **About** | Background, quick info, and skill chips |
+| **Skills** | Languages, tools, and environments with proficiency levels |
+| **Projects** | AttendTrack (mini-capstone) and DevFolio (this site) |
+| **Experience** | Timeline — ICT strand → self-directed learning → BSIT |
+| **Contact** | Links and ways to reach me |
+
+---
+
+## Projects
+
+### AttendTrack
+A full attendance management system built as a mini-capstone project — from concept to delivery. Features student/teacher tracking, records management, and a detailed gallery page.
+
+### DevFolio
+This portfolio site itself, originally hand-coded as a static site and rebuilt as a React + Vite SPA.
+
+---
+
+## Tech Stack
+
+- **React 19** + **Vite**
+- **Tailwind CSS v4**
+- **React Router v7** — client-side routing
+- **Deployed on Vercel**
+
+---
+
+## Skills Highlighted
+
+**Languages & Tools**
+HTML / CSS · JavaScript · Java · C# · C · Git · Firebase · Vite
+
+**Environments & Data**
+IntelliJ IDEA · Visual Studio · SQL · Firestore · Android (APK)
+
+---
+
+## Running Locally
 
 ```bash
 npm install
-npm run dev      # start the dev server
-npm run build    # production build -> dist/
-npm run preview  # preview the production build
+npm run dev
 ```
 
-## Project structure
+Build for production:
 
+```bash
+npm run build
 ```
-src/
-├── main.jsx                # entry point, wraps the app in <BrowserRouter>
-├── App.jsx                 # routes: "/" and "/attendtrack-gallery"
-├── index.css               # global styles (ported from style.css 1:1)
-│
-├── context/
-│   └── ThemeContext.jsx    # light/dark theme provider (data-theme attr + localStorage)
-│
-├── hooks/
-│   ├── useTheme.js              # consume ThemeContext
-│   ├── useReveal.js             # IntersectionObserver-based scroll-reveal
-│   ├── useActiveSection.js      # highlights the nav link for the section in view
-│   ├── useScrollToTopVisible.js # shows/hides the "back to top" button
-│   └── usePageTransition.js     # page-exit/page-enter fade between routes
-│
-├── components/
-│   ├── Navbar.jsx           # nav bar, mobile menu, theme toggle, active link
-│   ├── Footer.jsx
-│   ├── ScrollToTopButton.jsx
-│   ├── Reveal.jsx            # <Reveal> wrapper that applies the scroll-reveal hook
-│   ├── Icons.jsx              # all inline SVG icons as components
-│   ├── AttendTrackModal.jsx  # the "case study" modal on the home page
-│   └── Lightbox.jsx           # fullscreen image viewer for the gallery page
-│
-├── sections/                 # the home page, broken into one file per <section>
-│   ├── Hero.jsx
-│   ├── About.jsx
-│   ├── Skills.jsx
-│   ├── Projects.jsx
-│   ├── Experience.jsx
-│   └── Contact.jsx
-│
-├── pages/
-│   ├── Home.jsx               # assembles all sections + modal
-│   └── AttendTrackGallery.jsx # the former attendtrack-gallery.html
-│
-├── data/                     # content as plain data, used by the components above
-│   ├── about.js               # chips + info cards
-│   ├── skills.js
-│   ├── timeline.js
-│   └── attendtrack.js         # AttendTrack project + gallery content
-│
-└── styles/
-    └── gallery.css           # styles for the gallery page only, scoped under
-                               # `.gallery-page` so its color variables can't
-                               # leak into the rest of the site
-```
-
-## Notes on the conversion
-
-- **Routing**: `/` is the portfolio, `/attendtrack-gallery` is the gallery page.
-  The nav's "AttendTrack" link and the gallery's "Portfolio" link both play the
-  original fade/slide page-exit animation before navigating.
-- **Theme**: a single `ThemeContext` now drives dark/light mode everywhere
-  (previously each HTML page had its own copy of the toggle logic). The gallery
-  page originally *defaulted* to dark — it's been flipped to default to light so
-  both pages agree on what "no `data-theme` attribute" means, with the dark
-  variant applied via `[data-theme="dark"]`.
-- **Scroll reveal / active nav / scroll-to-top**: these were vanilla
-  `IntersectionObserver` / `scroll` listeners in `script.js`; they're now small
-  custom hooks (`useReveal`, `useActiveSection`, `useScrollToTopVisible`).
-- **Content as data**: skills, timeline entries, project info, and AttendTrack
-  screenshots/features live in `src/data/*.js` so they're easy to tweak without
-  touching component markup.
-- **Bug fix**: the original `style.css` had a stray `\n` inside a selector
-  (`\n .mo-close:hover`) which silently broke that hover rule — fixed during the
-  port.
-
-## Next step
-
-Styling is currently the original hand-written CSS (`index.css` +
-`styles/gallery.css`), copied over class-for-class. The plan is to replace this
-with Tailwind utility classes next, section by section.

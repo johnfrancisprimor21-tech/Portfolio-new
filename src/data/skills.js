@@ -6,12 +6,12 @@ export const skillGroups = [
     title: 'Languages & Tools',
     rows: [
       { name: 'HTML / CSS', level: 'Advanced', levelClass: 'lv-a' },
-      { name: 'Java', level: 'Good', levelClass: 'lv-g' },
-      { name: 'C#', level: 'Good', levelClass: 'lv-g' },
+      { name: 'Java', level: 'Great', levelClass: 'lv-g' },
+      { name: 'C#', level: 'Great', levelClass: 'lv-g' },
       { name: 'C', level: 'Good', levelClass: 'lv-d' },
       { name: 'JavaScript', level: 'Learning', levelClass: 'lv-d' },
       { name: 'Git', level: 'Good', levelClass: 'lv-d' },
-      { name: 'Firebase / Vite', level: 'Good', levelClass: 'lv-g' },
+      { name: 'Firebase / Vite', level: 'Great', levelClass: 'lv-g' },
     ],
   },
   {

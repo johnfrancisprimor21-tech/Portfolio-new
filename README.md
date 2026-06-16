@@ -10,10 +10,11 @@ Personal portfolio website showcasing my projects, skills, and journey as a BS I
 
 I'm a BSIT student passionate about building systems, writing code, and turning ideas into working software. I enjoy learning by doing — most of what I know comes from hands-on projects and self-directed exploration beyond the classroom.
 
-- 📍 Cebu City, Philippines
-- 🎓 BS Information Technology — Cebu Eastern College
-- 💼 Available for opportunities
-- 📘 Facebook: [John Francis Primor II](https://www.facebook.com/jfcp21)
+
+- Location: Cebu City, Philippines
+- Degree: BS Information Technology — Cebu Eastern College
+- Status: Available for opportunities
+- Facebook: [John Francis Primor II](https://www.facebook.com/jfcp21)
 
 ---
 

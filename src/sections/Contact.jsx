@@ -1,4 +1,4 @@
-import { ExternalLinkIcon, MailIcon } from '../components/Icons'
+import { DownloadIcon, ExternalLinkIcon, MailIcon } from '../components/Icons'
 
 export default function Contact() {
   return (
@@ -17,6 +17,9 @@ export default function Contact() {
         </a>
         <a className="text-link" href="https://github.com/johnfrancisprimor21-tech" target="_blank" rel="noreferrer">
           Find me on GitHub <ExternalLinkIcon size={13} aria-hidden="true" />
+        </a>
+        <a className="text-link" href="/John_Francis_Primor_CV.pdf" download="John_Francis_Primor_CV.pdf">
+          Download my CV (PDF) <DownloadIcon size={14} aria-hidden="true" />
         </a>
       </div>
     </section>

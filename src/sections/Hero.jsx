@@ -1,4 +1,4 @@
-import { CodeIcon, FacebookIcon, MailIcon } from '../components/Icons'
+import { CodeIcon, DownloadIcon, FacebookIcon, MailIcon } from '../components/Icons'
 
 export default function Hero() {
   return (
@@ -26,6 +26,10 @@ export default function Hero() {
           <a className="button button--primary" href="mailto:johnfrancisprimor21@gmail.com">
             <span className="hero-connect-dot" aria-hidden="true" />
             Let’s connect
+          </a>
+          <a className="button button--quiet" href="/John_Francis_Primor_CV.pdf" download="John_Francis_Primor_CV.pdf">
+            <DownloadIcon size={15} aria-hidden="true" />
+            Download CV
           </a>
           <a className="hero-email-link" href="mailto:johnfrancisprimor21@gmail.com">
             <MailIcon size={15} aria-hidden="true" />

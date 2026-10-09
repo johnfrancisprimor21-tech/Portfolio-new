@@ -50,3 +50,21 @@ export const devFolio = {
     'A hand-coded responsive portfolio website built to present projects, skills, and background. Features a dark/light mode toggle, scroll-reveal animations, and a project case study modal — no frameworks, just HTML, CSS, and JavaScript.',
   stack: ['HTML', 'CSS', 'JavaScript'],
 }
+
+export const portfolioProjects = [
+  {
+    tag: 'Full-Stack Web App',
+    title: 'PortFold',
+    desc: 'A portfolio builder for creating, editing, previewing, and publishing personal portfolio sites. Includes three templates and an interactive Three.js workstation in the Creative design.',
+    stack: ['Laravel', 'Supabase', 'Three.js', 'Tailwind CSS'],
+    sourceUrl: 'https://github.com/johnfrancisprimor21-tech/PortFold',
+    liveUrl: 'https://portfold.onrender.com',
+  },
+  {
+    tag: 'Full-Stack Web App',
+    title: 'Personal Task Manager',
+    desc: 'A responsive task management app for creating, editing, and deleting tasks, setting optional due dates, and tracking pending or completed work.',
+    stack: ['Laravel', 'PHP', 'Blade', 'Supabase PostgreSQL'],
+    sourceUrl: 'https://github.com/johnfrancisprimor21-tech/task-manager',
+  },
+]

@@ -71,9 +71,9 @@ export const portfolioProjects = [
     desc: 'A responsive task management app for creating, editing, and deleting tasks, setting optional due dates, and tracking pending or completed work.',
     stack: ['Laravel', 'PHP', 'Blade', 'Supabase PostgreSQL'],
     screenshots: [
-      { src: '/project-previews/task-manager-empty.png', alt: 'Task Manager dashboard overview' },
-      { src: '/project-previews/task-manager-form.png', alt: 'Task Manager add task form' },
       { src: '/project-previews/task-manager-dashboard.png', alt: 'Task Manager dashboard with a task' },
+      { src: '/project-previews/task-manager-form.png', alt: 'Task Manager add task form' },
+      { src: '/project-previews/task-manager-empty.png', alt: 'Task Manager dashboard overview' },
     ],
     sourceUrl: 'https://github.com/johnfrancisprimor21-tech/task-manager',
   },

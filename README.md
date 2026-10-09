@@ -25,7 +25,7 @@ I'm a BSIT student passionate about building systems, writing code, and turning 
 | **Hero** | Introduction with stats — 2 years coding, 4+ projects, 3+ languages |
 | **About** | Background, quick info, and skill chips |
 | **Skills** | Languages, tools, and environments with proficiency levels |
-| **Projects** | AttendTrack, DevFolio, PortFold, and Personal Task Manager |
+| **Projects** | AttendTrack, PortFold, and Personal Task Manager featured together with screenshot previews; DevFolio follows |
 | **Experience** | Timeline — ICT strand → self-directed learning → BSIT |
 | **Contact** | Links and ways to reach me |
 
@@ -35,9 +35,6 @@ I'm a BSIT student passionate about building systems, writing code, and turning 
 
 ### AttendTrack
 A full attendance management system built as a mini-capstone project — from concept to delivery. Features student/teacher tracking, records management, and a detailed gallery page.
-
-### DevFolio
-This portfolio site itself, originally hand-coded as a static site and rebuilt as a React + Vite SPA.
 
 ### PortFold
 A full-stack portfolio builder with Simple, Modern, and Creative templates. Users can create and edit portfolios, preview and export them, and publish shareable pages. The Creative template features an interactive Three.js workstation.
@@ -49,6 +46,9 @@ A full-stack portfolio builder with Simple, Modern, and Creative templates. User
 A responsive Laravel and Supabase app for creating, editing, and deleting tasks, adding optional due dates, and tracking pending and completed work.
 
 - [Source code](https://github.com/johnfrancisprimor21-tech/task-manager)
+
+### DevFolio
+This portfolio site itself, originally hand-coded as a static site and rebuilt as a React + Vite SPA.
 
 ---
 

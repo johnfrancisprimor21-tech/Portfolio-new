@@ -57,6 +57,11 @@ export const portfolioProjects = [
     title: 'PortFold',
     desc: 'A portfolio builder for creating, editing, previewing, and publishing personal portfolio sites. Includes three templates and an interactive Three.js workstation in the Creative design.',
     stack: ['Laravel', 'Supabase', 'Three.js', 'Tailwind CSS'],
+    screenshots: [
+      { src: '/project-previews/portfold-modern.jpg', alt: 'PortFold Modern portfolio template' },
+      { src: '/project-previews/portfold-creative.jpg', alt: 'PortFold Creative 3D workstation template' },
+      { src: '/project-previews/portfold-simple.jpg', alt: 'PortFold Simple portfolio template' },
+    ],
     sourceUrl: 'https://github.com/johnfrancisprimor21-tech/PortFold',
     liveUrl: 'https://portfold.onrender.com',
   },
@@ -65,6 +70,11 @@ export const portfolioProjects = [
     title: 'Personal Task Manager',
     desc: 'A responsive task management app for creating, editing, and deleting tasks, setting optional due dates, and tracking pending or completed work.',
     stack: ['Laravel', 'PHP', 'Blade', 'Supabase PostgreSQL'],
+    screenshots: [
+      { src: '/project-previews/task-manager-empty.png', alt: 'Task Manager dashboard overview' },
+      { src: '/project-previews/task-manager-form.png', alt: 'Task Manager add task form' },
+      { src: '/project-previews/task-manager-dashboard.png', alt: 'Task Manager dashboard with a task' },
+    ],
     sourceUrl: 'https://github.com/johnfrancisprimor21-tech/task-manager',
   },
 ]

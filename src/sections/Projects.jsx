@@ -10,7 +10,7 @@ const CARD_BASE =
 const ICON_BASE = 'mb-4 flex h-10 w-10 items-center justify-center rounded-[14px] bg-grad-2 text-violet sm:mb-5 sm:h-12 sm:w-12 dark:text-cyan'
 const LINK_BASE = 'inline-flex items-center gap-1.5 rounded-lg border border-border px-3 py-2 text-xs font-bold text-text transition-colors hover:border-violet/40 hover:text-violet'
 
-function ProjectCard({ title, tag, desc, stack, sourceUrl, liveUrl, delay = '.13s' }) {
+function ProjectCard({ title, tag, desc, stack, screenshots, sourceUrl, liveUrl, delay = '.13s' }) {
   return (
     <Reveal as="article" className={`${CARD_BASE} border-border bg-bg`} delay={delay}>
       <div className={ICON_BASE}>
@@ -19,6 +19,19 @@ function ProjectCard({ title, tag, desc, stack, sourceUrl, liveUrl, delay = '.13
       <div className="mb-2 text-[0.7rem] font-bold uppercase tracking-[1px] text-violet">{tag}</div>
       <h3 className="mb-3 font-display text-[1.3rem] font-extrabold text-text sm:text-2xl">{title}</h3>
       <p className="mb-5 text-[0.85rem] leading-[1.75] text-sub sm:text-[0.9rem]">{desc}</p>
+      {screenshots?.length > 0 && (
+        <div className="mb-5 flex gap-1.5 overflow-hidden rounded-xl sm:gap-2">
+          {screenshots.map((screenshot) => (
+            <img
+              key={screenshot.src}
+              src={screenshot.src}
+              alt={screenshot.alt}
+              loading="lazy"
+              className="h-20 w-1/3 rounded-lg object-cover object-top sm:h-[120px]"
+            />
+          ))}
+        </div>
+      )}
       <div className="mb-5 flex flex-wrap gap-2">
         {stack.map((chip) => (
           <span className="rounded-md border border-border bg-bg2 px-2.5 py-1 text-[0.65rem] font-semibold text-sub sm:px-3.5 sm:py-[5px] sm:text-[0.7rem]" key={chip}>
@@ -89,15 +102,15 @@ export default function Projects({ onOpenAttendTrack }) {
           </div>
         </Reveal>
 
+        {portfolioProjects.map((project, index) => (
+          <ProjectCard key={project.title} {...project} delay={`${0.2 + index * 0.07}s`} />
+        ))}
         <ProjectCard
           title={<><span className="text-violet">{devFolio.title.prefix}</span>{devFolio.title.rest}</>}
           tag={devFolio.tag}
           desc={devFolio.desc}
           stack={devFolio.stack}
         />
-        {portfolioProjects.map((project, index) => (
-          <ProjectCard key={project.title} {...project} delay={`${0.2 + index * 0.07}s`} />
-        ))}
       </div>
     </Section>
   )

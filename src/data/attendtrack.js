@@ -77,4 +77,14 @@ export const portfolioProjects = [
     ],
     sourceUrl: 'https://github.com/johnfrancisprimor21-tech/task-manager',
   },
+  {
+    tag: 'Java Desktop App',
+    title: 'TaskFlow',
+    desc: 'A Java Swing task manager for organizing work, personal, and school tasks. Add tasks with due dates and priority, filter the list, view task details, mark work complete, and remove tasks.',
+    stack: ['Java', 'Java Swing', 'Object-Oriented Programming'],
+    screenshots: [
+      { src: '/project-previews/taskflow-dashboard.svg', alt: 'TaskFlow Java desktop task manager with category filters and prioritized task cards' },
+    ],
+    sourceUrl: 'https://github.com/johnfrancisprimor21-tech/TaskFlow',
+  },
 ]

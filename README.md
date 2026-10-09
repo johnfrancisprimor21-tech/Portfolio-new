@@ -25,7 +25,7 @@ I'm a BSIT student passionate about building systems, writing code, and turning 
 | **Hero** | Introduction with stats — 2 years coding, 4+ projects, 3+ languages |
 | **About** | Background, quick info, and skill chips |
 | **Skills** | Languages, tools, and environments with proficiency levels |
-| **Projects** | AttendTrack, PortFold, and Personal Task Manager featured together with screenshot previews; DevFolio follows |
+| **Projects** | AttendTrack, PortFold, Personal Task Manager, TaskFlow, and DevFolio |
 | **Experience** | Timeline — ICT strand → self-directed learning → BSIT |
 | **Contact** | Links and ways to reach me |
 
@@ -46,6 +46,11 @@ A full-stack portfolio builder with Simple, Modern, and Creative templates. User
 A responsive Laravel and Supabase app for creating, editing, and deleting tasks, adding optional due dates, and tracking pending and completed work.
 
 - [Source code](https://github.com/johnfrancisprimor21-tech/task-manager)
+
+### TaskFlow
+A Java Swing desktop task manager for work, personal, and school tasks. It supports due dates, priority and category filters, task details, completion, and deletion.
+
+- [Source code](https://github.com/johnfrancisprimor21-tech/TaskFlow)
 
 ### DevFolio
 This portfolio site itself, originally hand-coded as a static site and rebuilt as a React + Vite SPA.

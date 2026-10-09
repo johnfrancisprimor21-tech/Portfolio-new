@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title description">
+  <title id="title">TaskFlow task manager dashboard</title>
+  <desc id="description">A Java desktop task manager interface with category filters and prioritized task cards.</desc>
+  <rect width="1200" height="675" fill="#f5f7fa"/>
+  <path d="M0 0h270v675H0z" fill="#1e293b"/>
+  <text x="38" y="60" fill="#fff" font-family="Arial, sans-serif" font-size="29" font-weight="700">TaskFlow</text>
+  <text x="39" y="88" fill="#94a3b8" font-family="Arial, sans-serif" font-size="15">TASK MANAGER</text>
+  <text x="39" y="144" fill="#94a3b8" font-family="Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.4">FILTER BY</text>
+  <rect x="24" y="163" width="222" height="42" rx="8" fill="#334155"/>
+  <circle cx="46" cy="184" r="5" fill="#818cf8"/>
+  <text x="64" y="190" fill="#fff" font-family="Arial, sans-serif" font-size="16" font-weight="600">All tasks</text>
+  <circle cx="46" cy="230" r="5" fill="#ef4444"/><text x="64" y="236" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="15">High priority</text>
+  <circle cx="46" cy="272" r="5" fill="#f59e0b"/><text x="64" y="278" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="15">Medium priority</text>
+  <circle cx="46" cy="314" r="5" fill="#22c55e"/><text x="64" y="320" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="15">Low priority</text>
+  <path d="M25 349h220" stroke="#475569"/>
+  <text x="46" y="389" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="15">Work</text>
+  <text x="46" y="431" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="15">Personal</text>
+  <text x="46" y="473" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="15">School</text>
+  <rect x="24" y="592" width="222" height="48" rx="8" fill="#6366f1"/>
+  <text x="135" y="622" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700">+  Add task</text>
+
+  <text x="316" y="76" fill="#0f172a" font-family="Arial, sans-serif" font-size="30" font-weight="700">All Tasks</text>
+  <text x="318" y="103" fill="#64748b" font-family="Arial, sans-serif" font-size="15">4 tasks</text>
+  <rect x="1090" y="49" width="70" height="34" rx="17" fill="#fff" stroke="#e2e8f0"/>
+  <circle cx="1111" cy="66" r="5" fill="#6366f1"/><text x="1123" y="71" fill="#475569" font-family="Arial, sans-serif" font-size="13">Today</text>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="310" y="132" width="850" height="104" rx="12" fill="#fff" stroke="#e2e8f0"/>
+    <rect x="330" y="157" width="5" height="54" rx="2.5" fill="#ef4444"/>
+    <text x="355" y="165" fill="#0f172a" font-size="18" font-weight="700">Finish Java project</text>
+    <text x="355" y="190" fill="#64748b" font-size="13">School  ·  Due: 2026-10-14  ·  High priority</text>
+    <rect x="355" y="199" width="60" height="22" rx="11" fill="#eef2ff"/><text x="385" y="214" fill="#4f46e5" text-anchor="middle" font-size="11" font-weight="700">Pending</text>
+    <rect x="886" y="167" width="74" height="32" rx="7" fill="#6366f1"/><text x="923" y="188" fill="#fff" text-anchor="middle" font-size="12" font-weight="700">Details</text>
+    <rect x="970" y="167" width="72" height="32" rx="7" fill="#22c55e"/><text x="1006" y="188" fill="#fff" text-anchor="middle" font-size="12" font-weight="700">Done</text>
+    <rect x="1052" y="167" width="82" height="32" rx="7" fill="#ef4444"/><text x="1093" y="188" fill="#fff" text-anchor="middle" font-size="12" font-weight="700">Delete</text>
+
+    <rect x="310" y="253" width="850" height="104" rx="12" fill="#fff" stroke="#e2e8f0"/>
+    <rect x="330" y="278" width="5" height="54" rx="2.5" fill="#f59e0b"/>
+    <text x="355" y="286" fill="#0f172a" font-size="18" font-weight="700">Review database notes</text>
+    <text x="355" y="311" fill="#64748b" font-size="13">School  ·  Due: 2026-10-16  ·  Medium priority</text>
+    <rect x="355" y="320" width="60" height="22" rx="11" fill="#eef2ff"/><text x="385" y="335" fill="#4f46e5" text-anchor="middle" font-size="11" font-weight="700">Pending</text>
+    <rect x="886" y="288" width="74" height="32" rx="7" fill="#6366f1"/><text x="923" y="309" fill="#fff" text-anchor="middle" font-size="12" font-weight="700">Details</text>
+    <rect x="970" y="288" width="72" height="32" rx="7" fill="#22c55e"/><text x="1006" y="309" fill="#fff" text-anchor="middle" font-size="12" font-weight="700">Done</text>
+    <rect x="1052" y="288" width="82" height="32" rx="7" fill="#ef4444"/><text x="1093" y="309" fill="#fff" text-anchor="middle" font-size="12" font-weight="700">Delete</text>
+
+    <rect x="310" y="374" width="850" height="104" rx="12" fill="#fff" stroke="#e2e8f0"/>
+    <rect x="330" y="399" width="5" height="54" rx="2.5" fill="#22c55e"/>
+    <text x="355" y="407" fill="#64748b" font-size="18" font-weight="700">Plan the weekend</text>
+    <text x="355" y="432" fill="#64748b" font-size="13">Personal  ·  Due: 2026-10-18  ·  Low priority</text>
+    <rect x="355" y="441" width="54" height="22" rx="11" fill="#dcfce7"/><text x="382" y="456" fill="#16a34a" text-anchor="middle" font-size="11" font-weight="700">Done</text>
+    <rect x="886" y="409" width="74" height="32" rx="7" fill="#6366f1"/><text x="923" y="430" fill="#fff" text-anchor="middle" font-size="12" font-weight="700">Details</text>
+    <rect x="970" y="409" width="72" height="32" rx="7" fill="#cbd5e1"/><text x="1006" y="430" fill="#fff" text-anchor="middle" font-size="12" font-weight="700">Done</text>
+    <rect x="1052" y="409" width="82" height="32" rx="7" fill="#ef4444"/><text x="1093" y="430" fill="#fff" text-anchor="middle" font-size="12" font-weight="700">Delete</text>
+
+    <rect x="310" y="495" width="850" height="104" rx="12" fill="#fff" stroke="#e2e8f0"/>
+    <rect x="330" y="520" width="5" height="54" rx="2.5" fill="#f59e0b"/>
+    <text x="355" y="528" fill="#0f172a" font-size="18" font-weight="700">Prepare team presentation</text>
+    <text x="355" y="553" fill="#64748b" font-size="13">Work  ·  Due: 2026-10-20  ·  Medium priority</text>
+    <rect x="355" y="562" width="60" height="22" rx="11" fill="#eef2ff"/><text x="385" y="577" fill="#4f46e5" text-anchor="middle" font-size="11" font-weight="700">Pending</text>
+    <rect x="886" y="530" width="74" height="32" rx="7" fill="#6366f1"/><text x="923" y="551" fill="#fff" text-anchor="middle" font-size="12" font-weight="700">Details</text>
+    <rect x="970" y="530" width="72" height="32" rx="7" fill="#22c55e"/><text x="1006" y="551" fill="#fff" text-anchor="middle" font-size="12" font-weight="700">Done</text>
+    <rect x="1052" y="530" width="82" height="32" rx="7" fill="#ef4444"/><text x="1093" y="551" fill="#fff" text-anchor="middle" font-size="12" font-weight="700">Delete</text>
+  </g>
+</svg>
